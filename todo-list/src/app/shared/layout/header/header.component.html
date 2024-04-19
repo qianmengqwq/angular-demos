@@ -1,6 +1,15 @@
-<header class="app-header">
-  <div class="container flex item-center justify-between">
-    <h4 class="font-bold text-xl">Todo Management</h4>
-    <div class="px-2 font-medium cursor-pointer">Login</div>
-  </div>
-</header>
+<nz-page-header
+  class="site-page-header"
+  nzTitle="Title"
+  nzSubtitle="This is a subtitle"
+  (nzBack)="onBack()"
+  nzBackIcon
+>
+  <nz-breadcrumb nz-page-header-breadcrumb>
+    <nz-breadcrumb-item>First-level Menu</nz-breadcrumb-item>
+    <nz-breadcrumb-item>
+      <a>Second-level Menu</a>
+    </nz-breadcrumb-item>
+    <nz-breadcrumb-item>Third-level Menu</nz-breadcrumb-item>
+  </nz-breadcrumb>
+</nz-page-header>
